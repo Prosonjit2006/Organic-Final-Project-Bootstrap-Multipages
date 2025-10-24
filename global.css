@@ -1,0 +1,518 @@
+/* font face link */
+
+@font-face {
+  font-family: inter;
+  src: url("../font/Inter/static/Inter_28pt-Regular.ttf");
+}
+
+@font-face {
+  font-family: raleway;
+  src: url("../font/Raleway/static/Raleway-Regular.ttf");
+}
+
+/* decleare the required things into the root */
+:root {
+  --green: #a1be61;
+  --light-green: #e8ffd8;
+}
+
+.green {
+  color: var(--green);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h1 {
+  font-size: 72px;
+  font-weight: bold;
+  font-family: raleway;
+}
+h2 {
+  font-size: 48px;
+  font-weight: bold;
+  font-family: raleway;
+}
+
+.section-padding {
+  padding-top: 88px;
+  padding-bottom: 88px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.container {
+  max-width: 1320px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.btn {
+  transition: all 0.75s ease-in-out;
+}
+.btn:hover {
+  transform: scale(1.05) translateY(-4px);
+}
+.my-btn {
+  max-width: 235px;
+  width: 100%;
+  /* border: 1px solid gray; */
+  border-radius: 40px;
+  padding: 17px 63px;
+  background-color: var(--green);
+  color: white;
+  font-family: raleway;
+  font-weight: bold;
+}
+
+.my-btn:hover {
+  color: black;
+  background-color: #8da35e;
+}
+
+nav {
+  position: -webkit-sticky;
+}
+
+.sticky {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  border-top: 0;
+}
+.active{
+  color: white !important;
+}
+
+/* ----- special case of the font size  ----------------------------------------------------------------------------------------------*/
+
+.siz24 {
+  font-size: 24px;
+  font-family: raleway;
+  font-weight: bold;
+}
+.siz48 {
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+/* ========================================================================================= topbar part */
+
+.topbar {
+  background-color: #fbfbfb;
+  padding: 15px 0;
+}
+
+.topbar-content,
+.mail-phone {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mail-phone {
+  gap: 15px;
+}
+.mail-phone a {
+  color: #333333;
+}
+.icon-set {
+  width: 21px;
+  margin-top: 11px;
+  margin-right: 5px;
+}
+
+/* ========================================================================================= navbar part */
+
+.navbar {
+  background-color: var(--green);
+  height: 75px;
+}
+.navbar-brand {
+  color: black;
+}
+.navlist a {
+  color: #333333;
+  transition: all 0.75s ease-in-out;
+}
+.navlist a:hover {
+  color: white;
+  box-shadow: 0 0 5px gray;
+  border-radius: 40px;
+  transform: scale(1.1) translateY(-3px);
+}
+.icons i {
+  color: #333333;
+}
+.navToggler {
+  display: block;
+  color: black;
+  font-size: 22px;
+}
+
+
+/* ========================================================================================== mail part */
+.mail .container {
+  background-color: var(--light-green);
+  border-radius: 20px;
+}
+.mail form {
+  position: relative;
+}
+input {
+  display: block;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 30px;
+}
+input[type="email"] {
+  background-color: white;
+  width: 758px;
+  height: 68px;
+  margin-left: 45px;
+}
+
+.email-btn {
+  background-color: var(--green);
+  padding: 13px;
+  border-radius: 40px;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+}
+.email-btn:hover {
+  background-color: #768a49;
+  color: white;
+}
+
+/* ========================================================================================= footer part */
+
+.footer {
+  padding: 85px 0 175px;
+  position: relative;
+}
+.footer .container {
+  position: relative;
+}
+
+.footer a {
+  color: #333333;
+  line-height: 2;
+}
+.footer p {
+  font-family: inter;
+  font-weight: lighter;
+  max-width: 350px;
+  width: 100%;
+  margin-bottom: 45px;
+}
+
+.icon-bg {
+  background-color: var(--green);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 21px;
+  transition: all 0.5s ease-in-out;
+}
+.icon-bg:hover {
+  background-color: #7e9252;
+  transform: scale(1.3);
+}
+
+.cradit-card {
+  gap: 5px;
+  position: absolute;
+  bottom: -150px;
+  right: 5%;
+}
+.cradit-card img{
+  transition: all 0.75s ease-in-out;
+}
+.cradit-card img:hover{
+  transform: scale(1.35) translateY(-4px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------ responsive part ----------- */
+
+/* xxl - 1399px */
+@media screen and (max-width: 1399px) {
+}
+
+/* xl - 1199px */
+@media screen and (max-width: 1199px) {
+ 
+}
+
+/* preview lg - 9px */
+
+/* lg - 991px */
+@media screen and (max-width: 991.98px) {
+  .col-lg-100 {
+    width: 100%;
+  }
+  .col-lg-50 {
+    width: 50%;
+  }
+  .col-lg-33 {
+    width: 33%;
+  }
+  .col-lg-25 {
+    width: 25%;
+  }
+
+  /* navbar part */
+  
+  .navToggler {
+    display: none !important;
+  }
+  nav {
+    position: relative;
+  }
+  .navlist {
+    background-color: var(--green);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+  .icons {
+    position: absolute;
+    top: 4px;
+    right: 15px;
+  }
+
+  /* email part */
+
+  input[type="email"] {
+    width: 558px;
+    height: 58px;
+  }
+
+  .email-btn {
+    padding: 9px;
+  }
+}
+
+/* md - 767px */
+@media screen and (max-width: 767px) {
+  .col-md-100 {
+    width: 100%;
+  }
+  .col-md-50 {
+    width: 50%;
+  }
+  .col-md-33 {
+    width: 33%;
+  }
+  .col-md-25 {
+    width: 25%;
+  }
+
+  input[type="email"] {
+    width: 350px;
+    height: 58px;
+  }
+
+  .email-btn {
+    padding: 9px;
+  }
+}
+
+/* sd - 575px */
+@media screen and (max-width: 575px) {
+  .col-sd-100 {
+    width: 100%;
+  }
+  .col-sd-50 {
+    width: 50%;
+  }
+  .col-sd-33 {
+    width: 33%;
+  }
+  .col-sd-25 {
+    width: 25%;
+  }
+
+  .mail-phone {
+    flex-direction: column;
+    gap: 0;
+  }
+  #siz11 {
+    font-size: 16px;
+  }
+  .mail-phone li {
+    line-height: 0;
+  }
+  .icon-set-2 {
+    width: 13px;
+    margin-top: 13px;
+  }
+
+  
+  input[type="email"] {
+    width: 250px;
+    height: 50px;
+  }
+
+  .email-btn {
+    top: 7px;
+    right: 7px;
+    padding: 7px;
+    font-size: 14px;
+  }
+
+  .footer .row .col-6 {
+    text-align: center;
+  }
+
+  .icons-2 {
+    position: absolute;
+    top: 55%;
+    left: 10%;
+  }
+}
+
+/* mid of sd-xs - 530px */
+@media screen and (max-width: 530px) {
+  
+}
+
+/* xs - 320px */
+@media screen and (max-width: 320px) {
+  .col-xs-100 {
+    width: 100%;
+  }
+  .col-xs-50 {
+    width: 50%;
+  }
+  .col-xs-33 {
+    width: 33%;
+  }
+  .col-xs-25 {
+    width: 25%;
+  }
+
+  .mail-phone {
+    flex-direction: column;
+    gap: 0;
+  }
+  #siz11 {
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+  }
+  #siz11 i {
+    margin-top: 3px;
+    margin-right: 5px;
+  }
+  .mail-phone li {
+    line-height: 0;
+  }
+  .icon-set-2 {
+    width: 13px;
+    margin-top: 13px;
+  }
+
+ 
+
+  h2 {
+    font-size: 36px;
+  }
+
+  
+  .mail-content {
+    position: relative;
+    height: 250px;
+  }
+  .mail-content figure {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  #email-flex {
+    position: absolute;
+    bottom: 20px;
+    left: -15px;
+    right: 0;
+  }
+  .email-btn {
+    right: 17px;
+  }
+
+  .footer p {
+    font-size: 16px;
+  }
+  #fs-14 {
+    font-size: 50px;
+  }
+  .icons-2 {
+    margin-left: 40px;
+    margin-top: -60px;
+  }
+  .cradit-card {
+    margin-right: 90px;
+    margin-bottom: 40px;
+  }
+ 
+}
