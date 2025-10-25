@@ -101,7 +101,7 @@ nav {
   z-index: 999;
   border-top: 0;
 }
-.active{
+.active {
   color: white !important;
 }
 
@@ -137,10 +137,10 @@ nav {
 .mail-phone a {
   color: #333333;
 }
-.icons a{
+.icons a {
   transition: all 0.5s ease-in-out;
 }
-.icons a:hover{
+.icons a:hover {
   transform: scale(1.15);
   color: white;
 }
@@ -177,7 +177,6 @@ nav {
   color: black;
   font-size: 22px;
 }
-
 
 /* ========================================================================================== mail part */
 
@@ -228,7 +227,7 @@ input[type="email"] {
   color: #333333;
   line-height: 2;
 }
-.footer a:hover{
+.footer a:hover {
   color: rgb(181, 119, 181);
 }
 .footer p {
@@ -262,32 +261,12 @@ input[type="email"] {
   bottom: -150px;
   right: 5%;
 }
-.cradit-card img{
+.cradit-card img {
   transition: all 0.75s ease-in-out;
 }
-.cradit-card img:hover{
+.cradit-card img:hover {
   transform: scale(1.35) translateY(-4px);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -310,7 +289,6 @@ input[type="email"] {
 
 /* xl - 1199px */
 @media screen and (max-width: 1199px) {
- 
 }
 
 /* preview lg - 9px */
@@ -331,7 +309,7 @@ input[type="email"] {
   }
 
   /* navbar part */
-  
+
   .navToggler {
     display: none !important;
   }
@@ -419,7 +397,6 @@ input[type="email"] {
     margin-top: 13px;
   }
 
-  
   input[type="email"] {
     width: 250px;
     height: 50px;
@@ -443,9 +420,8 @@ input[type="email"] {
   }
 }
 
-/* mid of sd-xs - 530px */
+/* brakepoint- 530px */
 @media screen and (max-width: 530px) {
-  
 }
 
 /* xs - 320px */
@@ -484,13 +460,10 @@ input[type="email"] {
     margin-top: 13px;
   }
 
- 
-
   h2 {
     font-size: 36px;
   }
 
-  
   .mail-content {
     position: relative;
     height: 250px;
@@ -525,5 +498,4 @@ input[type="email"] {
     margin-right: 90px;
     margin-bottom: 40px;
   }
- 
 }

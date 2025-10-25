@@ -112,12 +112,12 @@
   color: white;
 }
 
-.price{
+.price {
   display: flex;
 }
 
-.price del{
-  color: #CFC7C7;
+.price del {
+  color: #cfc7c7;
   font-family: inter;
   font-size: 14px;
   font-weight: bold;
@@ -141,24 +141,18 @@
   color: black;
 }
 
-
 /* products part 2 */
 /* .products-2{
   padding: 0 0 88px;
 } */
-.products-2 h2{
-padding-bottom: 72px;
+.products-2 h2 {
+  padding-bottom: 72px;
 }
-
-
-
-
 
 /* deal part  */
 
-
-.deal-2{
-  background-image: url('../img/Products-page/2nd-bg.png');
+.deal-2 {
+  background-image: url("../img/Products-page/2nd-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -168,23 +162,27 @@ padding-bottom: 72px;
   margin: 88px 0;
 }
 
-.deal-2 .container{
+.deal-2 .container {
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.deal-content{
+.deal-content {
   text-align: center;
   margin: 50px 0 10px;
 }
 
-.deal-2 p{
+.deal-2 p {
   font-family: raleway;
   max-width: 700px;
   width: 100%;
   margin: 40px 0;
 }
+
+
+
+
 
 
 
@@ -226,7 +224,7 @@ padding-bottom: 72px;
     width: 100%;
     margin-bottom: 10px;
   }
-  .card-content{
+  .card-content {
     padding: 10px;
   }
 }
@@ -339,7 +337,7 @@ padding-bottom: 72px;
   .col-sd-25 {
     width: 25%;
   }
-  .deal-2 p{
+  .deal-2 p {
     margin: 20px;
   }
 }
@@ -397,7 +395,7 @@ padding-bottom: 72px;
   .card-content {
     min-height: 115px;
   }
-  .products h2{
+  .products h2 {
     max-width: 200px;
     width: 100%;
   }
