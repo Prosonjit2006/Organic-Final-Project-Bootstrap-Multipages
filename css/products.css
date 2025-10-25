@@ -47,9 +47,7 @@
 }
 
 /* ======================================================================================= products part */
-.products {
-  padding: 90px 0;
-}
+
 .card {
   margin-top: 15px;
   overflow: hidden;
@@ -114,6 +112,18 @@
   color: white;
 }
 
+.price{
+  display: flex;
+}
+
+.price del{
+  color: #CFC7C7;
+  font-family: inter;
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
 .cart-icon {
   background-color: var(--green);
   width: 34px;
@@ -132,14 +142,49 @@
 }
 
 
+/* products part 2 */
+/* .products-2{
+  padding: 0 0 88px;
+} */
+.products-2 h2{
+padding-bottom: 72px;
+}
 
 
 
 
 
+/* deal part  */
 
 
+.deal-2{
+  background-image: url('../img/Products-page/2nd-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 350px;
+  max-height: 410px;
+  height: 100%;
+  margin: 88px 0;
+}
 
+.deal-2 .container{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.deal-content{
+  text-align: center;
+  margin: 50px 0 10px;
+}
+
+.deal-2 p{
+  font-family: raleway;
+  max-width: 700px;
+  width: 100%;
+  margin: 40px 0;
+}
 
 
 
@@ -180,6 +225,9 @@
     max-width: 500px;
     width: 100%;
     margin-bottom: 10px;
+  }
+  .card-content{
+    padding: 10px;
   }
 }
 
@@ -229,9 +277,9 @@
   }
   .card-content .price-cart {
     position: absolute;
-    bottom: 10px;
-    left: 15px;
-    right: 15px;
+    bottom: 8px;
+    left: 8px;
+    right: 8px;
   }
   .p-img-margin {
     margin-top: 25px;
@@ -291,6 +339,9 @@
   .col-sd-25 {
     width: 25%;
   }
+  .deal-2 p{
+    margin: 20px;
+  }
 }
 
 /* brakepoint - 530px */
@@ -340,10 +391,14 @@
   }
 
   h2 {
-    font-size: 36px;
+    font-size: 35px;
   }
 
   .card-content {
     min-height: 115px;
+  }
+  .products h2{
+    max-width: 200px;
+    width: 100%;
   }
 }

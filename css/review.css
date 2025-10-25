@@ -1,0 +1,627 @@
+/* ========================================================================================= banner part */
+
+.carousel-item img {
+  min-height: 70vh;
+}
+.banner-content {
+  padding: 20px 0;
+}
+.banner-content {
+  position: absolute;
+  top: 30%;
+  left: 9%;
+  text-align: start;
+  color: black;
+}
+
+.banner-content h1 {
+  max-width: 505px;
+  width: 100%;
+}
+
+.banner-content p {
+  font-family: inter;
+  font-weight: bold;
+  max-width: 600px;
+  width: 100%;
+  letter-spacing: 1.04px;
+  margin: 30px 0 40px;
+}
+
+/* Target the individual indicator elements */
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 2px solid rgb(0, 0, 0);
+  opacity: 0.5;
+}
+
+.carousel-indicators .active {
+  opacity: 1;
+  background-color: #000000;
+  border: none;
+  width: 13px;
+  height: 13px;
+}
+
+/* ========================================================================================== deal part */
+.deals {
+  overflow: hidden;
+  background-color: #fbfbfb;
+}
+.deals .container {
+  position: relative;
+}
+.right-last {
+  position: absolute;
+  top: 0;
+  right: -100%;
+  height: 325px;
+}
+.deal-box {
+  background-color: var(--green);
+  max-width: 650px;
+  width: 100%;
+  max-height: 390px !important;
+  height: 100%;
+  padding: 40px 20px 20px 40px;
+}
+
+.deal-btn {
+  width: 118px;
+  background-color: white;
+  border-radius: 10px;
+  font-size: 14px;
+  font-family: raleway;
+}
+.deal-btn:hover {
+  background-color: #5b5454;
+  color: white;
+}
+.light-green {
+  background-color: var(--light-green);
+}
+
+/* ========================================================================================== about part */
+
+/* .about {
+  padding: 72px 0;
+} */
+
+.about .col {
+  padding: 20px;
+}
+
+.about figure {
+  max-width: 345px;
+  width: 100%;
+  max-height: 375px;
+  height: 100%;
+  position: relative;
+}
+
+.about figure::after {
+  content: url("../img/index-page/about/2.png");
+  display: block;
+  position: absolute;
+  width: 235px;
+  height: 215px;
+  bottom: -33%;
+  right: -32%;
+}
+
+/* ======================================================================================= products part */
+/* .products {
+  padding: 90px 0;
+} */
+.card {
+  margin-top: 15px;
+  overflow: hidden;
+  border-radius: 0;
+  border: none;
+}
+.card .img-box {
+  background-color: #fbfbfb;
+  border: 1px solid var(--green);
+  padding: 10px;
+  width: 100%;
+  min-height: 165px !important;
+  max-height: 165px;
+
+  margin-bottom: 15px;
+}
+.card figure {
+  padding: 5px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+}
+.card figure img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  transition: all 0.5s ease-in-out;
+  object-fit: contain;
+}
+
+.card figure:hover {
+  transform: scale(1.1);
+}
+
+.card-content {
+  border: 1px solid var(--green);
+  padding: 8px 16px;
+  margin-top: -8px;
+  height: 95px;
+}
+
+.card-content p {
+  max-width: 160px;
+  width: 100%;
+  font-size: 14px;
+  font-family: inter;
+  margin-bottom: 5px;
+}
+
+.product-btn {
+  width: 96px;
+  height: 36px;
+  background-color: #a1be61;
+  border-radius: 40px;
+  color: white;
+}
+.product-btn:hover {
+  background-color: #667643;
+  color: white;
+}
+
+.cart-icon {
+  background-color: var(--green);
+  width: 34px;
+  height: 31px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cart-icon i {
+  transition: all 0.75s ease-in-out;
+  text-decoration: none;
+}
+.cart-icon i:hover {
+  transform: rotate(90deg) scale(1.3);
+  color: black;
+}
+
+/* ========================================================================================== offer part */
+.offer {
+  padding: 0 0 88px;
+}
+.offer h2 {
+  margin: 72px 0;
+}
+
+.card-2-content {
+  border: 1px solid #333333;
+  padding: 25px 31px;
+  height: 95px;
+}
+
+.card-2-content p {
+  max-width: 135px;
+  width: 100%;
+  font-size: 14px;
+  font-family: raleway;
+  font-weight: bold;
+  margin-top: 12px;
+}
+.card-2-content a {
+  font-size: 14px;
+  font-family: raleway;
+  font-weight: bold;
+  color: black;
+  text-decoration: underline;
+}
+
+/* =================================================================================== fruit & vegetable */
+
+.card-3 {
+  background-color: var(--green);
+}
+.card-3 .img {
+  /* padding: 10px; */
+  height: 130px;
+}
+.card-3 figure {
+  margin: 0 auto;
+  width: 150px;
+  /* height: 150px; */
+}
+
+.card-3-content {
+  border: 1px solid #646464;
+  border-top: none;
+  padding: 25px 31px;
+  height: 95px;
+  background-color: white;
+}
+
+.card-3-content p {
+  max-width: 135px;
+  width: 100%;
+  font-size: 14px;
+  font-family: raleway;
+  font-weight: bold;
+  margin-top: 12px;
+}
+.card-3-content a {
+  font-size: 14px;
+  font-family: raleway;
+  font-weight: bold;
+  color: black;
+  text-decoration: underline;
+}
+
+/* ======================================================================================== about-2 part */
+/* .about-2 {
+  padding: 70px 0;
+} */
+.about-2 p {
+  max-width: 535px;
+  width: 100%;
+  font-size: 14px;
+  font-family: inter;
+  font-weight: lighter;
+  letter-spacing: 0.6px;
+}
+.about-2 figure {
+  max-width: 365px;
+  width: 100%;
+  margin-left: auto;
+  position: relative;
+}
+.about-2 figure::after {
+  content: url("../img/index-page/about-2/2.png");
+  display: block;
+  width: 210px;
+  position: absolute;
+  bottom: -25%;
+  left: -15%;
+}
+
+/* ========================================================================================= review part */
+
+
+.review {
+  padding: 88px 0;
+}
+.review h2 {
+  margin-bottom: 120px;
+}
+.card-4 {
+  position: relative;
+  color: white;
+}
+.card-4-content {
+  background-color: var(--green);
+  max-width: 425px;
+  width: 100%;
+  height: 388px;
+  padding: 150px 22px 80px 22px;
+}
+.card-4 figure {
+  max-width: 178px;
+  width: 100%;
+  max-height: 172px;
+  height: 100%;
+ 
+  position: absolute;
+  top: -20%;
+  left: 30%;
+
+  z-index: 10;
+}
+.card-4 img{
+     border-radius: 50%;
+  border: none;
+}
+.card-4-content p {
+  font-family: inter;
+}
+
+.review .row:nth-child(-n+2){
+    margin-bottom: 150px;
+}
+
+
+#page-2 {
+  display: none;
+}
+
+/* Page button styles */
+.page-controls {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 64px;
+}
+
+.page-btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: #8fb569;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.page-btn:hover {
+  background-color: #d0d0d0;
+}
+
+.page-btn.clicked {
+  background-color: #EFEFEF;
+  color: rgb(0, 0, 0) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========== ------------ responsive part ----------- ========= */
+
+/* xxl - 1399px */
+@media screen and (max-width: 1399px) {
+
+}
+
+/* xl - 1199px */
+@media screen and (max-width: 1199px) {
+  /* banner part */
+  .banner {
+    background-color: #33333330;
+    background-blend-mode: multiply;
+  }
+
+  .carousel-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.07);
+    z-index: 1;
+  }
+
+  .banner-content {
+    top: 20%;
+  }
+  .banner-content h1 {
+    font-size: 68px;
+  }
+  .banner-content p {
+    max-width: 600px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+ 
+}
+
+/* lg - 991px */
+@media screen and (max-width: 991.98px) {
+  .col-lg-100 {
+    width: 100%;
+  }
+  .col-lg-50 {
+    width: 50%;
+  }
+  .col-lg-33 {
+    width: 33%;
+  }
+  .col-lg-25 {
+    width: 25%;
+  }
+
+  /* banner part */
+  .banner-content h1 {
+    font-size: 50px;
+  }
+  .banner-content p {
+    font-size: 18px;
+    max-width: 450px;
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .card-4-content p {
+    font-size: 18px;
+  }
+  .card-4 figure {
+    left: 21%;
+  }
+}
+
+/* brakepoint - 820px */
+@media screen and (max-width: 820px) {
+  .card-4 figure {
+    left: 16%;
+  }
+  .card-4-content {
+    padding: 110px 10px 10px 15px;
+  }
+}
+
+/* md - 767px */
+@media screen and (max-width: 767.98px) {
+  .col-md-100 {
+    width: 100%;
+  }
+  .col-md-50 {
+    width: 50%;
+  }
+  .col-md-33 {
+    width: 33%;
+  }
+  .col-md-25 {
+    width: 25%;
+  }
+  .banner-content {
+    left: 5%;
+  }
+
+  .review h2{
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  .card-4 {
+    margin-left: 150px;
+    margin-top: 100px;
+  }
+  .card-4-content {
+    padding-top: 130px;
+    max-height: 320px;
+    height: 100%;
+  }
+  .card-4 figure {
+    left: 21%;
+  }
+}
+
+/* sd - 575px */
+@media screen and (max-width: 575px) {
+  .col-sd-100 {
+    width: 100%;
+  }
+  .col-sd-50 {
+    width: 50%;
+  }
+  .col-sd-33 {
+    width: 33%;
+  }
+  .col-sd-25 {
+    width: 25%;
+  }
+
+  .banner-content p{
+    max-width: 420px;
+    width: 100%;
+  }
+
+  .card-4 {
+    margin-left: 65px;
+    margin-top: 100px;
+  }
+  .card-4 figure {
+    left: 26%;
+  }
+}
+
+/* brakepoint - 530px */
+@media screen and (max-width: 530px) {
+  .banner-content p {
+    margin: 10px 0;
+  }
+  .banner-btn {
+    padding: 15px;
+  }
+ 
+}
+
+/* brakepoint - 480px */
+@media screen and (max-width: 480px) {
+  .card-4 {
+    margin-left: 14px;
+  }
+  .card-4-content figure {
+    left: 26%;
+  }
+}
+
+/* xs - 320px */
+@media screen and (max-width: 320px) {
+  .col-xs-100 {
+    width: 100%;
+  }
+  .col-xs-50 {
+    width: 50%;
+  }
+  .col-xs-33 {
+    width: 33%;
+  }
+  .col-xs-25 {
+    width: 25%;
+  }
+
+  /* banner part */
+
+  .banner-content h1 {
+    font-size: 40px;
+    max-width: 310px;
+    width: 100%;
+  }
+  .banner-content p {
+    font-size: 16px;
+  }
+  .banner-btn {
+    width: 120px;
+    padding: 10px 15px;
+    font-size: 14px;
+    margin-left: 70px;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  
+
+  
+
+  .card-4 {
+    margin: 50px 0;
+  }
+  .card-4 figure {
+    width: 125px;
+    height: 120px;
+    top: -15%;
+    left: 30%;
+  }
+  .card-4 img{
+     border-radius: 0;
+  border: none;
+}
+  .card-4-content {
+    height: 320px;
+    padding: 90px 20px 20px;
+  }
+}
