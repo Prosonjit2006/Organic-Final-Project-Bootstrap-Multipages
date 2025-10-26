@@ -89,7 +89,7 @@ p {
 }
 
 nav {
-  position: -webkit-sticky;
+  position: relative;
 }
 
 .sticky {
@@ -98,7 +98,7 @@ nav {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 999;
+  z-index: 100;
   border-top: 0;
 }
 .active {
@@ -155,6 +155,7 @@ nav {
 .navbar {
   background-color: var(--green);
   height: 75px;
+  z-index: 100;
 }
 .navbar-brand {
   color: black;
@@ -172,7 +173,7 @@ nav {
 .icons i {
   color: #333333;
 }
-.Toggler {
+.navToggler {
   display: block;
   color: black;
   font-size: 22px;
@@ -309,8 +310,15 @@ input[type="email"] {
   }
 
   /* navbar part */
+   /* .navbar-toggler {
+    display: block !important;
+    border: none;
+  }
+  .navbar-toggler:focus{
+    border: none;
+  } */
 
-  .Toggler {
+  .navToggler {
     display: none !important;
   }
   nav {

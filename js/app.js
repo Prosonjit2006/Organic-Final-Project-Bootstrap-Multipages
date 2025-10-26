@@ -1,6 +1,11 @@
+
+
+
+
+
+
+
 $(function () {
-
-
 
 
   //  sticky position on the navbar
@@ -12,7 +17,7 @@ $(function () {
 
     if (scrollTop > stickyNavTop) {
       $(".navbar").addClass("sticky");
-      $(".banner").css('margin-top', '78px');
+      $(".banner").css('margin-top', '75px');
     } else {
       $(".navbar").removeClass("sticky");
       $(".banner").css('margin-top', '0px');
@@ -24,6 +29,11 @@ $(function () {
   $(window).scroll(function () {
     stickyNav();
   });
+
+
+  //   $('.navbar-toggler').on('click', function(e) {
+  //   console.log('Toggler clicked!'); // Debug log
+  // });
 
 });
 
