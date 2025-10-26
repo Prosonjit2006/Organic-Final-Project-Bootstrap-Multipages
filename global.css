@@ -172,7 +172,7 @@ nav {
 .icons i {
   color: #333333;
 }
-.navToggler {
+.Toggler {
   display: block;
   color: black;
   font-size: 22px;
@@ -310,7 +310,7 @@ input[type="email"] {
 
   /* navbar part */
 
-  .navToggler {
+  .Toggler {
     display: none !important;
   }
   nav {
