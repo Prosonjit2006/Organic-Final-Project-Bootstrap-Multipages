@@ -1,3 +1,17 @@
+/* font face link */
+
+@font-face {
+  font-family: inter;
+  src: url("../font/Inter/static/Inter_28pt-Regular.ttf");
+}
+
+@font-face {
+  font-family: raleway;
+  src: url("../font/Raleway/static/Raleway-Regular.ttf");
+}
+
+
+
 /* ========================================================================================= banner part */
 
 /* .banner {
