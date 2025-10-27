@@ -35,6 +35,27 @@ $(function () {
   //   console.log('Toggler clicked!'); // Debug log
   // });
 
+
+   $(document).ready(function() {
+      // Toggle dropdown on button click
+      $('#userMenuBtn').on('click', function(e) {
+        e.stopPropagation();
+        $('#userMenu').toggleClass('show');
+      });
+
+      // Close dropdown when clicking outside
+      $(document).on('click', function(e) {
+        if (!$(e.target).closest('#userMenuBtn').length && !$(e.target).closest('#userMenu').length) {
+          $('#userMenu').removeClass('show');
+        }
+      });
+
+      // Close dropdown when a menu item is clicked
+      $('.menu-link').on('click', function() {
+        $('#userMenu').removeClass('show');
+      });
+    });
+
 });
 
 

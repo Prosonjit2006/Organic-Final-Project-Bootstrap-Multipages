@@ -107,12 +107,22 @@
             <li>
               <a href="#"><i class="fa-solid fa-magnifying-glass mx-2"></i></a>
             </li>
-            <li>
-              <a href="./login.html">
-                <figure class="icon-set p-1">
+            <li class="user-dropdown">
+              <button class="user-btn" type="button" id="userMenuBtn">
+                <figure class="icon-set">
                   <img src="./img/index-page/navbar/user.png" alt="user" />
                 </figure>
-              </a>
+              </button>
+
+              <ul class="user-menu" id="userMenu">
+                <li><a class="menu-link" href="./login.html">Log in</a></li>
+                <hr />
+                <li>
+                  <a class="menu-link" href="./dashboard.html">Dash board</a>
+                </li>
+                <hr />
+                <li><a class="menu-link" href="./logout.html">Log out</a></li>
+              </ul>
             </li>
 
             <li>

@@ -179,6 +179,86 @@ nav {
   font-size: 22px;
 }
 
+/* ================== user dropdown part ==================*/
+
+/* Dropdown container */
+.user-dropdown {
+  position: relative;
+}
+
+/* User button */
+.user-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+.user-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+}
+
+/* Icon container */
+.icon-set {
+  margin: 0;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-set img {
+  width: 22px;
+  height: 22px;
+  /* border-radius: 50%; */
+}
+
+/* Dropdown menu */
+.user-menu {
+  display: none;
+  position: absolute;
+  top: 135%;
+  right: -7%;
+  background: #ffffff;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  padding: 10px 0;
+  min-width: 135px;
+  z-index: 999;
+}
+
+.user-menu.show {
+  display: block;
+}
+
+.user-menu hr{
+  margin: 10px 0;
+}
+
+
+
+.menu-link {
+  font-family: raleway;
+  display: inline-block;
+  padding: 5px 0px;
+  color: #333;
+  font-size: 16px;
+  min-width: 100px;
+  transition: all 1s ease-in-out;
+}
+
+.menu-link:hover {
+  /* background: #f0f0f0; */
+  background-color: #A1BE61;
+  color: white;
+}
+
+
 /* ========================================================================================== mail part */
 
 .mail .container {
