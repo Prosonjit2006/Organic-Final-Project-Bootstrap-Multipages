@@ -621,3 +621,348 @@ background-color: transparent;
 .mt-4 {
   margin-top: 24px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- Responsive CSS --- */
+
+/* 1. Large Desktops (max-width: 1399px) */
+@media (max-width: 1399px) {
+  
+  .topbar ul {
+    gap: 24px; /* Was gap-4 (2rem) */
+  }
+
+  .product-stats {
+    gap: 24px; /* Was 32px */
+  }
+
+  .siz24 {
+    font-size: 22px;
+  }
+
+  .summary-card{
+    min-height: 190px;
+  }
+  
+  .sidebar{
+    width: 200px;
+  }
+
+  .graph-img{
+    width: auto;
+    object-fit: contain;
+  }
+
+}
+
+/* 2. Standard Desktops & Large Tablets (max-width: 1199px) */
+@media (max-width: 1199px) {
+  /* Reduce sidebar padding and menu font size */
+  .sidebar {
+    width: 200px;
+    padding: 26px 0 0 20px;
+  }
+
+  .menu-item {
+    font-size: 20px;
+  }
+
+  /* Further reduce gaps */
+  .topbar ul {
+    gap: 16px;
+  }
+
+  .top-data-part .d-flex {
+    gap: 12px;
+  }
+
+  /* Make top-selling product stats a bit tighter */
+  .product-stats {
+    gap: 16px;
+  }
+
+  .product-info {
+    flex-basis: 120px; /* Give it a bit more space */
+  }
+}
+
+/* 3. Tablets (max-width: 991px) - Major Layout Change */
+@media (max-width: 991px) {
+  /* --- Collapsed Sidebar --- */
+  /* Shrink the left column */
+  .left-part {
+    flex: 0 0 auto;
+    width: 80px;
+  }
+
+  /* Expand the right column */
+  .right-part {
+    flex: 0 0 auto;
+    width: calc(100% - 80px);
+  }
+
+  /* Style the collapsed sidebar */
+  .sidebar {
+    width: 100%;
+    padding: 26px 0;
+    align-items: center;
+  }
+
+  .logo {
+    max-width: 50px;
+    margin: 0 auto 30px;
+    padding: 0 10px;
+  }
+
+  /* Hide text labels and arrows */
+  .menu-label,
+  .menu-item .arrow {
+    display: none;
+  }
+
+  /* Center icons */
+  .menu-item {
+    font-size: 0; /* Hides text nodes */
+    justify-content: center;
+    padding: 12px 0;
+    gap: 0;
+  }
+
+  .menu-item.active,
+  .menu-item:hover {
+    transform: none; /* Remove hover effect */
+  }
+
+  .menu-item figure {
+    margin: 0;
+    width: 24px; /* Ensure icons are sized */
+    height: 24px;
+  }
+
+  /* --- Dashboard Content --- */
+
+  /* Stack main content (col-md-9) and recent activity (col-md-3) */
+  .dashboard > .row > .col-md-9 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .dashboard > .row > .col-md-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-top: 24px; /* Add space between stacked sections */
+  }
+
+  /* Make summary cards 2x2 */
+  .dashboard .g-3 .col-md-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  /* Stack product graph and product list */
+  .dashboard .col-md-9 .row .col-md-6 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .graph-img {
+    margin-bottom: 24px; /* Add space when stacked */
+  }
+}
+
+/* 4. Small Tablets & Large Phones (max-width: 767px) - Mobile Layout */
+@media (max-width: 767px) {
+  /* --- Hide Sidebar, Full-width Content --- */
+  .left-part {
+    display: none;
+  }
+
+  .right-part {
+    flex: 0 0 100%;
+    max-width: 100%;
+    /* Remove default padding if any */
+    padding: 0;
+  }
+
+  /* --- Stack Top Bars --- */
+  /* Topbar (search & icons) */
+  .topbar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 16px;
+    padding: 16px;
+  }
+
+  .topbar form {
+    width: 100%;
+  }
+
+  .search-box {
+    min-width: 100%;
+  }
+
+  .topbar ul {
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Top Data Part (Dashboard title & buttons) */
+  .top-data-part {
+    flex-direction: column;
+    align-items: stretch !important; /* Override d-flex */
+    gap: 16px;
+    padding: 16px;
+  }
+
+  .top-data-part .d-flex {
+    flex-direction: column;
+    align-items: stretch !important;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .top-data-part .btn {
+    width: 100%;
+  }
+
+  /* --- Adjust Dashboard Body --- */
+  .dashboard {
+    padding: 20px 16px;
+  }
+
+  /* Summary cards are now 1-across (handled by .col-md-3 stacking) */
+
+  /* --- Adjust Product List --- */
+  .products-card .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .products-card .btn-group {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .product-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .product-stats {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .stat-item {
+    text-align: center !important;
+  }
+
+  /* Stack pagination */
+  .pagination {
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 15px;
+  }
+}
+
+/* 5. Small Phones (max-width: 575px) */
+@media (max-width: 575px) {
+  /* Adjust base typography for small screens */
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  p {
+    font-size: 16px;
+  }
+  .siz24 {
+    font-size: 20px;
+  }
+  .siz16 {
+    font-size: 14px;
+  }
+  .siz14 {
+    font-size: 12px;
+  }
+
+  /* Reduce padding on cards */
+  .summary-card,
+  .products-card,
+  .recent-card {
+    padding: 16px;
+  }
+
+  /* Stack product stats vertically */
+  .product-stats {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: auto;
+  }
+
+  .stat-item {
+    text-align: left !important;
+  }
+
+  /* Stack recent order items */
+  .recent-order-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
+
+/* 6. Extra Small Phones (max-width: 320px) */
+@media (max-width: 320px) {
+  /* Wrap topbar icons if needed */
+  .topbar ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  /* Stack product import/export buttons */
+  .products-card .btn-group {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  /* Adjust search icon positions */
+  .form-img::before {
+    left: 15px;
+  }
+  .form-img::after {
+    right: 20px;
+  }
+}
