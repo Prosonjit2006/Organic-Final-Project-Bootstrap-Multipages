@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>www.organic.in - Dashboard</title>
+
+    <!-- favicon link -->
+    <link rel="icon" href="./favicon/favicon_io/favicon.ico" />
+
+    <!-- font awsome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- bootstrap css link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <!-- global css link -->
+    <!-- <link rel="stylesheet" href="./global.css" /> -->
+
+    <!-- index css link -->
+    <link rel="stylesheet" href="./css/dashboard.css" />
+  </head>
+  <!-- body part -->
+  <body>
+    <!-- main part -->
+    <main>
+      <section>
+        <div class="dash-board">
+          <!-- row part -->
+          <div class="row">
+            <!-- left part -->
+            <div class="col-2 left-part">
+              <aside class="sidebar">
+                <div class="logo">
+                  <img src="./img/dashboard-page/logo.png" alt="logo" />
+                </div>
+                <div class="menu-section">
+                  <div class="menu-label">DASH</div>
+                  <a href="#" class="menu-item active">
+                    <figure>
+                      <img
+                        src="./img/dashboard-page/left-part/1.png"
+                        alt="icons"
+                      />
+                    </figure>
+                    Sales</a
+                  >
+                  <a href="#" class="menu-item"
+                    ><figure>
+                      <img
+                        src="./img/dashboard-page/left-part/2.png"
+                        alt="icons"
+                      />
+                    </figure>
+                    Clinic</a
+                  >
+                  <a href="#" class="menu-item"
+                    ><figure>
+                      <img
+                        src="./img/dashboard-page/left-part/3.png"
+                        alt="icons"
+                      />
+                    </figure>
+                    eWallet</a
+                  >
+                </div>
+                <div class="menu-section">
+                  <div class="menu-label">APPS & PAGES</div>
+                  <a href="#" class="menu-item"
+                    ><figure>
+                      <img
+                        src="./img/dashboard-page/left-part/4.png"
+                        alt="icons"
+                      />
+                    </figure>
+                    Chat</a
+                  >
+                  <a href="#" class="menu-item"
+                    ><figure>
+                      <img
+                        src="./img/dashboard-page/left-part/5.png"
+                        alt="icons"
+                      />
+                    </figure>
+                    Calendar</a
+                  >
+                  <a href="#" class="menu-item"
+                    ><figure>
+                      <img
+                        src="./img/dashboard-page/left-part/6.png"
+                        alt="icons"
+                      />
+                    </figure>
+                    Email</a
+                  >
+                </div>
+                <div class="menu-section">
+                  <div class="menu-label">MORE</div>
+                  <a href="#" class="menu-item"
+                    ><figure>
+                      <img
+                        src="./img/dashboard-page/left-part/7.png"
+                        alt="icons"
+                      />
+                    </figure>
+                    Layout<span class="arrow"
+                      ><i class="fa-solid fa-chevron-right"></i></span
+                  ></a>
+                  <a href="#" class="menu-item"
+                    ><figure>
+                      <img
+                        src="./img/dashboard-page/left-part/8.png"
+                        alt="icons"
+                      />
+                    </figure>
+                    Multi Level<span class="arrow"
+                      ><i class="fa-solid fa-chevron-right"></i> </span
+                  ></a>
+                </div>
+              </aside>
+            </div>
+
+            <!-- right part -->
+            <div class="col-10 right-part">
+              <!-- topbar part -->
+              <div
+                class="topbar d-flex justify-content-between align-items-center px-3 py-2 bg-white shadow-sm"
+              >
+                <form>
+                  <div class="form-img">
+                    <input
+                      type="text"
+                      placeholder="Search something..."
+                      class="search-box"
+                    />
+                  </div>
+                </form>
+                <ul class="d-flex align-items-center gap-4">
+                  <li>
+                    <a href="#">
+                      <figure>
+                        <img
+                          src="./img/dashboard-page/right-part/topbar/bell.png"
+                          alt="bell"
+                        />
+                      </figure>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <figure>
+                        <img
+                          src="./img/dashboard-page/right-part/topbar/dashboard.png"
+                          alt="dashboard"
+                        />
+                      </figure>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <figure>
+                        <img
+                          src="./img/dashboard-page/right-part/topbar/setting.png"
+                          alt="setting"
+                        />
+                      </figure>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <figure>
+                        <img
+                          src="./img/dashboard-page/right-part/topbar/moon.png"
+                          alt="moon"
+                        />
+                      </figure>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <figure>
+                        <img
+                          src="./img/dashboard-page/right-part/topbar/man.png"
+                          alt="man"
+                        />
+                      </figure>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-black">
+                      Shivam <i class="fa-solid fa-angle-down"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- dashboard part -->
+
+              <!-- top data part -->
+              <div
+                class="d-flex justify-content-between align-items-center px-3 py-4 shadow-sm"
+              >
+                <p class="m-0 fw-bold">Dashboard</p>
+                <div class="d-flex align-items-center gap-3">
+                  <a href="#" class="btn btn-sm px-3 py-2">
+                    Help line:+(012) 123 456 78
+                  </a>
+                  <button class="btn btn-sm py-2">⇅ Short By</button>
+                  <button class="btn btn-sm d-flex align-items-center">
+                    01 May to 31 May
+                    <span class="clander"
+                      ><img
+                        src="./img/dashboard-page/right-part/clander.png"
+                        alt="clander"
+                    /></span>
+                  </button>
+                </div>
+              </div>
+
+              <!-- dashboard body part -->
+              <div class="dashboard">
+                <div class="row">
+                  <!-- dashboard left part -->
+                  <div class="col-md-9">
+                    <!-- dashboard sunnary card part -->
+                    <div class="row g-3 mb-3">
+                      <!-- col 1 -->
+                      <div class="col-md-3">
+                        <div class="card summary-card text-center p-3">
+                          <p class="siz14">TOTAL ORDERS</p>
+                          <div class="d-flex align-items-center mx-auto">
+                            <figure>
+                              <img
+                                src="./img/dashboard-page/right-part/bag.png"
+                                alt="bag"
+                              />
+                            </figure>
+                            <p class="siz24 fw-bold fw-bold ms-2">687.3k</p>
+                          </div>
+                          <p class="mx-auto small d-flex align-items-center">
+                            <span class="text-danger drop"
+                              >9.19%
+                              <img
+                                src="./img/dashboard-page/right-part/down.png"
+                                alt="down"
+                            /></span>
+                            Since last month
+                          </p>
+                        </div>
+                      </div>
+
+                      <!-- col 2 -->
+                      <div class="col-md-3">
+                        <div class="card summary-card text-center p-3">
+                          <p class="siz14">TOTAL RETURNS</p>
+                          <div class="d-flex align-items-center mx-auto">
+                            <figure>
+                              <img
+                                src="./img/dashboard-page/right-part/list.png"
+                                alt="list"
+                              />
+                            </figure>
+                            <p class="siz24 fw-bold ms-2">9.62k</p>
+                          </div>
+                          <p class="mx-auto small d-flex align-items-center">
+                            <span class="green drop"
+                              >26.87%
+                              <img
+                                src="./img/dashboard-page/right-part/up.png"
+                                alt="down"
+                            /></span>
+                            Since last month
+                          </p>
+                        </div>
+                      </div>
+
+                      <!-- col 3 -->
+                      <div class="col-md-3">
+                        <div class="card summary-card text-center p-3">
+                          <p class="siz14">AVG. SALES EARNINGS</p>
+                          <div class="d-flex align-items-center mx-auto">
+                            <figure>
+                              <img
+                                src="./img/dashboard-page/right-part/money.png"
+                                alt="money"
+                              />
+                            </figure>
+                            <p class="siz24 fw-bold ms-2">₹9838112 INR</p>
+                          </div>
+                          <p class="mx-auto small d-flex align-items-center">
+                            <span class="green drop"
+                              >3.51%
+                              <img
+                                src="./img/dashboard-page/right-part/up.png"
+                                alt="down"
+                            /></span>
+                            Since last month
+                          </p>
+                        </div>
+                      </div>
+
+                      <!-- col 4 -->
+                      <div class="col-md-3">
+                        <div class="card summary-card text-center p-3">
+                          <p class="siz14">NUMBER OF VISITS</p>
+                          <div class="d-flex align-items-center mx-auto">
+                            <figure>
+                              <img
+                                src="./img/dashboard-page/right-part/visit.png"
+                                alt="visit"
+                              />
+                            </figure>
+                            <p class="siz24 fw-bold ms-2">87.94M</p>
+                          </div>
+                          <p class="mx-auto small d-flex align-items-center">
+                            <span class="text-danger drop"
+                              >1.05%
+                              <img
+                                src="./img/dashboard-page/right-part/down.png"
+                                alt="down"
+                            /></span>
+                            Since last month
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- dashboard overview & products -->
+                    <div class="row">
+                      <!-- col 1 (bar graph part) -->
+                      <div class="col-md-6">
+                        <figure class="graph-img">
+                          <img
+                            src="./img/dashboard-page/right-part/graph-bar.png"
+                            alt="graph"
+                          />
+                        </figure>
+                      </div>
+
+                      <!-- col 2 (products & price part) -->
+                      <div class="col-md-6">
+                        <div class="products-card">
+                          <!-- header part -->
+                          <div class="header">
+                            <p class="siz16 fw-bold">Top Selling Products</p>
+                            <div class="btn-group">
+                              <button class="import-btn">
+                                <span>Import</span>
+                                <i class="fa-solid fa-download"></i>
+                              </button>
+                              <button class="export-btn">
+                                <span>Export</span>
+                                <i class="fa-solid fa-upload"></i>
+                              </button>
+                            </div>
+                          </div>
+
+                          <!-- product part -->
+                          <div class="product-list">
+                            <div class="product-item">
+                              <div class="product-img">
+                                <img
+                                  src="./img/dashboard-page/right-part/products/1.png"
+                                  alt="product"
+                                />
+                              </div>
+                              <div class="product-info">
+                                <div class="product-name">
+                                  Popular Essentials 100g WholeCashews
+                                </div>
+                                <div class="product-date">14 SEP 2025</div>
+                              </div>
+                              <div class="product-stats">
+                                <div class="stat-item">
+                                  <div class="stat-value">₹ 164</div>
+                                  <div class="stat-label">Price</div>
+                                </div>
+                                <div class="stat-item">
+                                  <div class="stat-value">82</div>
+                                  <div class="stat-label">Quantity</div>
+                                </div>
+                                <div class="stat-item">
+                                  <div class="stat-value">₹ 13448</div>
+                                  <div class="stat-label">Amount</div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="product-item">
+                              <div class="product-img">
+                                <img
+                                  src="./img/dashboard-page/right-part/products/2.png"
+                                  alt="product"
+                                />
+                              </div>
+                              <div class="product-info">
+                                <div class="product-name">
+                                  Fortune Soya Health Refined Soyabean Oil
+                                </div>
+                                <div class="product-date">05 AUG 2025</div>
+                              </div>
+                              <div class="product-stats">
+                                <div class="stat-item">
+                                  <div class="stat-value">₹800</div>
+                                  <div class="stat-label">Price</div>
+                                </div>
+                                <div class="stat-item">
+                                  <div class="stat-value">37</div>
+                                  <div class="stat-label">Quantity</div>
+                                </div>
+                                <div class="stat-item">
+                                  <div class="stat-value">₹ 29600</div>
+                                  <div class="stat-label">Amount</div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="product-item">
+                              <div class="product-img">
+                                <img
+                                  src="./img/dashboard-page/right-part/products/3.png"
+                                  alt="product"
+                                />
+                              </div>
+                              <div class="product-info">
+                                <div class="product-name">TATA Sault</div>
+                                <div class="product-date">06 AUG 2025</div>
+                              </div>
+                              <div class="product-stats">
+                                <div class="stat-item">
+                                  <div class="stat-value">₹27</div>
+                                  <div class="stat-label">Price</div>
+                                </div>
+                                <div class="stat-item">
+                                  <div class="stat-value">64</div>
+                                  <div class="stat-label">Quantity</div>
+                                </div>
+                                <div class="stat-item">
+                                  <div class="stat-value">₹1728</div>
+                                  <div class="stat-label">Amount</div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="product-item">
+                              <div class="product-img">
+                                <img
+                                  src="./img/dashboard-page/right-part/products/4.png"
+                                  alt="product"
+                                />
+                              </div>
+                              <div class="product-info">
+                                <div class="product-name">
+                                  Sunrise Pure Cumin
+                                </div>
+                                <div class="product-date">26 JUNE 2025</div>
+                              </div>
+                              <div class="product-stats">
+                                <div class="stat-item">
+                                  <div class="stat-value">₹ 450</div>
+                                  <div class="stat-label">Price</div>
+                                </div>
+                                <div class="stat-item">
+                                  <div class="stat-value">184</div>
+                                  <div class="stat-label">Quantity</div>
+                                </div>
+                                <div class="stat-item">
+                                  <div class="stat-value">₹ 82800</div>
+                                  <div class="stat-label">Amount</div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="product-item">
+                              <div class="product-img">
+                                <img
+                                  src="./img/dashboard-page/right-part/products/5.png"
+                                  alt="product"
+                                />
+                              </div>
+                              <div class="product-info">
+                                <div class="product-name">
+                                  Britannia Marie Gold
+                                </div>
+                                <div class="product-date">17 APRIL 2025</div>
+                              </div>
+                              <div class="product-stats">
+                                <div class="stat-item">
+                                  <div class="stat-value">₹ 36</div>
+                                  <div class="stat-label">Price</div>
+                                </div>
+                                <div class="stat-item">
+                                  <div class="stat-value">69</div>
+                                  <div class="stat-label">Quantity</div>
+                                </div>
+                                <div class="stat-item">
+                                  <div class="stat-value">₹ 2484</div>
+                                  <div class="stat-label">Amount</div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="pagination">
+                            <div class="pagination-text">
+                              Showing 5 of 10 Results
+                            </div>
+                            <div class="pagination-controls">
+                              <button class="page-btn">
+                                <i class="fa-solid fa-chevron-left"></i>
+                              </button>
+                              <button class="page-btn active">1</button>
+                              <button class="page-btn">2</button>
+                              <button class="page-btn">
+                                <i class="fa-solid fa-chevron-right"></i>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- dashboard right part -->
+                  <div class="col-md-3">
+                    <!-- Recent Orders and Activity Column (Right Side) -->
+
+                    <div class="recent-card">
+                      <p class="siz16 fw-bold">Recent Orders:</p>
+
+                      <div class="recent-orders-list">
+                        <div class="recent-order-item">
+                          <div class="order-img">
+                            <img
+                              src="./img/dashboard-page/right-part/products/1.png"
+                              alt="product"
+                            />
+                          </div>
+                          <div class="order-info">
+                            <div class="order-name">
+                              Popular Essentials 100g WholeCashews
+                            </div>
+                          </div>
+                          <div class="order-badge success">Sold</div>
+                        </div>
+
+                        <div class="recent-order-item">
+                          <div class="order-img">
+                            <img
+                              src="./img/dashboard-page/right-part/products/2.png"
+                              alt="product"
+                            />
+                          </div>
+                          <div class="order-info">
+                            <div class="order-name">
+                              Fortune Soya Health Refined Soyabean Oil
+                            </div>
+                          </div>
+                          <div class="order-badge success">Sold</div>
+                        </div>
+
+                        <div class="recent-order-item">
+                          <div class="order-img">
+                            <img
+                              src="./img/dashboard-page/right-part/products/3.png"
+                              alt="product"
+                            />
+                          </div>
+                          <div class="order-info">
+                            <div class="order-name">TATA Sault</div>
+                          </div>
+                          <div class="order-badge return">Return</div>
+                        </div>
+
+                        <div class="recent-order-item">
+                          <div class="order-img">
+                            <img
+                              src="./img/dashboard-page/right-part/products/4.png"
+                              alt="product"
+                            />
+                          </div>
+                          <div class="order-info">
+                            <div class="order-name">
+                              Sunrise Pure Cumin Powder, 500 g Pouch
+                            </div>
+                          </div>
+                          <div class="order-badge success">Sold</div>
+                        </div>
+
+                        <div class="recent-order-item">
+                          <div class="order-img">
+                            <img
+                              src="./img/dashboard-page/right-part/products/5.png"
+                              alt="product"
+                            />
+                          </div>
+                          <div class="order-info">
+                            <div class="order-name">Britannia Marie Gold</div>
+                          </div>
+                          <div class="order-badge success">Sold</div>
+                        </div>
+                      </div>
+
+                      <button class="view-all-btn">View All</button>
+
+                      <p class="siz16 fw-bold mt-1">Recent Activity:</p>
+
+                      <div class="recent-activity-list">
+                        <div class="activity-item">
+                          <div class="activity-icon">
+                            <i class="fa-solid fa-bucket"></i>
+                          </div>
+                          <div class="activity-content">
+                            <div class="activity-title">You sold an item</div>
+                            <div class="activity-text">
+                              Paul Burgess just purchased "My - Admin
+                              Dashboard"!
+                            </div>
+                            <div class="activity-time">9:12 AM</div>
+                          </div>
+                        </div>
+
+                        <div class="activity-item">
+                          <div class="activity-icon">
+                            <i class="fa-solid fa-rocket"></i>
+                          </div>
+                          <div class="activity-content">
+                            <div class="activity-title">
+                              Product on the Theme Market
+                            </div>
+                            <div class="activity-text">
+                              Reviewer added Admin Dashboard
+                            </div>
+                            <div class="activity-time">9:12 AM</div>
+                          </div>
+                        </div>
+
+                        <div class="activity-item">
+                          <div class="activity-icon">
+                            <i class="fa-solid fa-comment"></i>
+                          </div>
+                          <div class="activity-content">
+                            <div class="activity-title">Robert Delaney</div>
+                            <div class="activity-text">
+                              Send you message "Are you there?"
+                            </div>
+                            <div class="activity-time">9:12 AM</div>
+                          </div>
+                        </div>
+
+                        <div class="activity-item">
+                          <div class="activity-icon">
+                            <i class="fa-solid fa-image"></i>
+                          </div>
+                          <div class="activity-content">
+                            <div class="activity-title">Audrey Tobey</div>
+                            <div class="activity-text">
+                              Uploaded a photo "Error.jpg"
+                            </div>
+                            <div class="activity-time">9:12 AM</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- j Quarry js link -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- proper js link -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <!-- bootstrap js link  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js"
+      integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- local js link -->
+    <script src="./js/app.js"></script>
+
+    <script src="./js/review.js"></script>
+  </body>
+</html>

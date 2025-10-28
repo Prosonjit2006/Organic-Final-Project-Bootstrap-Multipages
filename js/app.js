@@ -31,9 +31,7 @@ $(function () {
   });
 
 
-  //   $('.navbar-toggler').on('click', function(e) {
-  //   console.log('Toggler clicked!'); // Debug log
-  // });
+
 
 
    $(document).ready(function() {
@@ -56,6 +54,13 @@ $(function () {
       });
     });
 
+
+    // navbar-togglar part animation
+
+    $('.navbar-toggler').on('click', function () {
+    const icon = $(this).find('i')
+    icon.toggleClass('fa-bars fa-xmark') // swap icons
+  })
 });
 
 

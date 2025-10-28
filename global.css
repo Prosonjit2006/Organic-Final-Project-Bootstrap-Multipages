@@ -105,6 +105,24 @@ nav {
   color: white !important;
 }
 
+.navbar {
+  transition: background-color 0.4s ease, backdrop-filter 0.4s ease;
+}
+
+.navbar.scrolled {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  backdrop-filter: blur(10px);
+}
+.navbar-toggler i {
+  transition: transform 0.3s ease;
+}
+.navbar-toggler.collapsed i {
+  transform: rotate(0deg);
+}
+.navbar-toggler:not(.collapsed) i {
+  transform: rotate(180deg);
+}
+
 /* ----- special case of the font size  ----------------------------------------------------------------------------------------------*/
 
 .siz24 {
