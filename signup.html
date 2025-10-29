@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - OrganicShop</title>
+   
+   
+    <!-- Font Awesome for social icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="stylesheet" href="./css/signup.css">
+</head>
+<body>
+    <div class="login-container">
+        <div class="login-card">
+            <div class="logo">
+                <figure>
+                    <img src="./img/login-page/logo.png" alt="logo">
+                </figure>
+            </div>
+
+            <h2 class="login-heading">Create your account</h2>
+            <p class="login-description">
+                Enter your details to create an account and access our services.
+            </p>
+
+            <div class="social-login">
+                <button class="social-btn google-btn" aria-label="Sign up with Google">
+                    <i class="fab fa-google"></i>
+                </button>
+                <button class="social-btn apple-btn" aria-label="Sign up with Apple">
+                    <i class="fab fa-apple"></i>
+                </button>
+                <button class="social-btn facebook-btn" aria-label="Sign up with Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                </button>
+            </div>
+
+            <div class="divider">
+                <span>Or Sign Up With Email</span>
+            </div>
+
+            <form class="signup-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <p class="name-err err"></p>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="name"
+                        placeholder="John Doe"
+                    />
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <p class="email-err err"></p>
+                    <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        placeholder="user@demo.com"
+                    />
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <p class="password-err err"></p>
+                    <input
+                        type="password"
+                        class="form-control"
+                        id="password"
+                        placeholder="••••••"
+                    />
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <p class="confirm-password-err err"></p>
+                    <input
+                        type="password"
+                        class="form-control"
+                        id="confirm-password"
+                        placeholder="••••••"
+                    />
+                </div>
+
+               <button type="submit" class="btn-create-account">Create Account</button>
+
+                <div class="login-text">
+                    <a href="./login.html" class="has-account"> Already have an account? </a>
+                    <a href="./login.html" class="login-link">Login !</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

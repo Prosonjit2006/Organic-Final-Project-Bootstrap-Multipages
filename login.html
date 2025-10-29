@@ -74,6 +74,7 @@
           <form class="login-form">
             <div class="form-group">
               <label for="email">Email</label>
+              <p class="err email-err"></p>
               <input
                 type="email"
                 class="form-control"
@@ -84,6 +85,7 @@
 
             <div class="form-group">
               <label for="password">Password</label>
+              <p class="err password-err"></p>
               <input
                 type="password"
                 class="form-control"
@@ -106,15 +108,10 @@
             <!-- Sign Up Link -->
             <div class="signup-text">
               <a href="#" class="no-account"> Don't have an account? </a>
-              <a href="#" class="signup-link">Sign Up !</a>
+              <a href="./signup.html" class="signup-link">Sign Up !</a>
             </div>
           </form>
-           <!-- Back to Login Link -->
-          <!-- <div class="back-to-login">
-            <a href="./index.html" class="back-link">
-              <i class="fas fa-arrow-left"></i> Back to Login
-            </a>
-          </div> -->
+           
         </div>
       </div>
     </main>
@@ -139,5 +136,8 @@
       integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
       crossorigin="anonymous"
     ></script>
+
+    <!-- local js link -->
+     <script src="./js/login.js"></script>
   </body>
 </html>

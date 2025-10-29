@@ -3,21 +3,16 @@
   src: url("../font/Inter/static/Inter_28pt-Regular.ttf");
 }
 
-a {
-  display: inline-block;
-  text-decoration: none;
-}
-
-
-
 body {
-  font-family: inter;
+  font-family: "Inter", sans-serif;
   background-color: #a1be61;
-  min-height: 90vh;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding: 20px; */
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .login-container {
@@ -31,16 +26,13 @@ body {
   padding: 30px 35px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
   border: 3px solid #8fb356;
-  margin: 20px 0;
+  margin: 0 auto;
 }
 
-/* Logo */
 .logo {
   text-align: center;
-  margin-bottom: 20px;
 }
 
-/* Heading */
 .login-heading {
   font-size: 32px;
   font-weight: 600;
@@ -58,7 +50,6 @@ body {
   line-height: 1.5;
 }
 
-/* Social Login Buttons */
 .social-login {
   display: flex;
   justify-content: center;
@@ -69,7 +60,6 @@ body {
 .social-btn {
   width: 42px;
   height: 34px;
-  /* border-radius: 50%; */
   border: none;
   cursor: pointer;
   display: flex;
@@ -78,6 +68,7 @@ body {
   font-size: 20px;
   background-color: #fbfbfb;
   transition: transform 0.3s ease;
+  border-radius: 6px;
 }
 
 .social-btn:hover {
@@ -97,7 +88,6 @@ body {
   color: #3b34f9;
 }
 
-/* Divider */
 .divider {
   text-align: center;
   margin: 25px 0;
@@ -124,11 +114,6 @@ body {
   z-index: 2;
 }
 
-/* Form */
-.login-form {
-  margin-top: 30px;
-}
-
 .form-group {
   margin-bottom: 20px;
 }
@@ -149,6 +134,7 @@ body {
   border: 1px solid #d0d0d0;
   border-radius: 6px;
   transition: border-color 0.3s ease;
+  box-sizing: border-box;
 }
 
 .form-control:focus {
@@ -158,56 +144,10 @@ body {
 }
 
 .form-control::placeholder {
-  color: #333333;
+  color: #999;
 }
 
-/* Form Options */
-.form-options {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 25px;
-}
-
-.err{
-  text-align: end;
-  color: red;
-}
-
-.remember-me {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.remember-me input[type="checkbox"] {
-  width: 18px;
-  height: 18px;
-  cursor: pointer;
-  border: 2px solid #d0d0d0;
-  border-radius: 4px;
-}
-
-.remember-me label {
-  font-size: 14px;
-  color: #333333;
-  cursor: pointer;
-  margin: 0;
-}
-
-.forgot-password {
-  font-size: 14px;
-  color: #333333;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.forgot-password:hover {
-  color: #8fb356;
-}
-
-/* Login Button */
-.btn-login {
+.btn-create-account {
   width: 100%;
   height: 45px;
   background-color: #a1be61;
@@ -218,14 +158,14 @@ body {
   border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin-top: 10px;
 }
 
-.btn-login:hover {
+.btn-create-account:hover {
   background-color: #7a9d47;
 }
 
-/* Sign Up Text */
-.signup-text {
+.login-text {
   text-align: center;
   margin-top: 20px;
   font-size: 18px;
@@ -233,70 +173,45 @@ body {
   font-family: inter;
 }
 
-.no-account {
+.has-account {
   color: #a1be61;
   margin-right: 10px;
   font-family: inter;
 }
 
-.signup-link {
+.login-link {
   color: #333333;
   font-weight: 600;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
-.signup-link:hover {
+.login-link:hover {
   color: #8fb356;
 }
 
-/* Back to Login */
-.back-to-login {
-  margin-top: 10px;
-  text-align: center;
-}
-
-.back-link {
-  color: #666666;
-  text-decoration: none;
-  font-size: 16px;
+/* Error messages - if you add validation later */
+.err {
+  color: red;
+  text-align: end;
+  font-size: 14px;
   font-weight: 500;
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  transition: color 0.3s ease;
+  margin-top: -12px;
+  margin-bottom: 15px;
+  min-height: 1.2em;
 }
 
-.back-link:hover {
-  color: #8fb356;
-}
-
-.back-link i {
-  font-size: 12px;
-}
-
-
-
-
-
-
-
-
-
-/* Responsive Design */
+/* responsive part */
 @media (max-width: 576px) {
   .login-card {
     padding: 40px 30px;
   }
-
   .logo h1 {
     font-size: 28px;
   }
-
   .login-heading {
     font-size: 24px;
   }
-
   .login-description {
     font-size: 13px;
   }
@@ -306,7 +221,6 @@ body {
   .login-card {
     padding: 30px 20px;
   }
-
   .social-btn {
     width: 45px;
     height: 45px;
