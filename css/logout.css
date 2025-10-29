@@ -76,3 +76,68 @@ main {
     background-color: #8ea855; /* Slightly darker green on hover */
     border-color: #8ea855;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive part */
+
+/* --- Responsive CSS --- */
+
+/* 1. For Small Tablets (max-width: 767px) */
+@media (max-width: 767px) {
+  .logout-question {
+    font-size: 36px; 
+  }
+
+  .btn-logout {
+    font-size: 20px; 
+    padding: 8px 50px; 
+  }
+}
+
+/* 2. For Mobile Phones (max-width: 575px) */
+@media (max-width: 575px) {
+  .logout-container {
+    padding: 20px; 
+    width: 90%; 
+  }
+
+  .logout-question {
+    font-size: 28px; 
+    margin-bottom: 25px;
+  }
+
+  .logout-buttons {
+    /* flex-direction: column;  */
+    gap: 15px; 
+    max-width: 200px;
+    margin: 0 auto;
+  }
+
+  .btn-logout {
+    font-size: 18px;
+    padding: 10px 40px; 
+  }
+}
+
+/* 3. For Small Mobile Phones (max-width: 320px) */
+@media (max-width: 320px) {
+  .logout-question {
+    font-size: 22px; 
+  }
+
+  .btn-logout {
+    font-size: 16px;
+    padding: 10px 30px; /
+  }
+}
