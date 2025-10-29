@@ -495,6 +495,15 @@ input[type="email"] {
   #siz11 {
     font-size: 16px;
   }
+  #siz11 figure{
+    margin:1px 3px 0 0;
+    
+  }
+  #siz11 figure img{
+    width: 16px;
+    object-fit: contain;
+  }
+ 
   .mail-phone li {
     line-height: 0;
   }
@@ -528,6 +537,23 @@ input[type="email"] {
 
 /* brakepoint- 530px */
 @media screen and (max-width: 530px) {
+}
+
+/* brakepoint - 390px */
+@media screen and (max-width: 390px) {
+  .topbar{
+    margin: 0 -5px;
+    
+  }
+  #siz11{
+    display: flex;
+    flex-direction: row;
+    /* font-size: 13px; */
+  }
+  #siz11 i{
+    margin-top: -6px;
+    margin-right: 2px;
+  }
 }
 
 /* xs - 320px */
