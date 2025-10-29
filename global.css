@@ -554,11 +554,10 @@ input[type="email"] {
     position: relative;
   }
  
-    #email-flex {
-      /* position: absolute;
-      bottom: 15px;
-      left: 13%; */
-    margin: 0 auto;
+  #email-flex {  
+   display: block;
+   position: absolute;
+   bottom: 10%;
   }
   .email-btn {
     right: 8px;
@@ -585,6 +584,7 @@ input[type="email"] {
   #flex{
     font-size: 14px;
   }
+
 
 
 }
