@@ -195,6 +195,8 @@ p {
   margin: 0;
 }
 
+/* search box part */
+
 .search-box {
   background-color: #e8ffd8;
   /* min-height: 37px; */
@@ -202,8 +204,11 @@ p {
   width: 100%;
   border: 1px solid #333333;
   border-radius: 10px;
-  padding: 5px 10px;
-  width: 200px;
+ 
+
+  padding: 5px 45px 5px 40px; /* (top, right, bottom, left) - Adjust 45px/40px as needed! */
+  box-sizing: border-box;
+  transition: padding 0.3s ease, background-color 0.3s ease;
 }
 input::placeholder {
   text-align: center;
@@ -223,6 +228,7 @@ input::placeholder {
   position: absolute;
   top: 7px;
   left: 20px;
+  pointer-events: none;
 }
 .form-img::after {
   content: url("../img/dashboard-page/right-part/topbar/command.png");
@@ -233,7 +239,10 @@ input::placeholder {
   position: absolute;
   top: 7px;
   right: 25px;
+  pointer-events: none;
 }
+
+
 
 .clander {
   border-left: 1px solid #333333;
