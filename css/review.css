@@ -541,6 +541,7 @@
 @media screen and (max-width: 480px) {
   .card-4 {
     margin-left: 14px;
+    /* height: 350px; */
   }
   .card-4-content figure {
     left: 26%;
