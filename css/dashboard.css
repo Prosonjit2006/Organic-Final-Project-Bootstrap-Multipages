@@ -176,7 +176,7 @@ p {
 
 
 
-/* dashboard right part */
+/* dash-board right part */
 .right-part {
   background-color: rgb(255, 255, 255);
   min-height: 100vh;
@@ -186,7 +186,7 @@ p {
 
 .topbar {
   /* margin-bottom: 10px solid black; */
-  min-height: 50px;
+  /* min-height: 50px; */
   border: 1px solid #333333;
 }
 
@@ -242,8 +242,9 @@ input::placeholder {
   padding: 5px 5px 5px 10px;
 }
 
+/* dashboard part */
 .dashboard {
-  padding: 40px 20px 0;
+  padding: 35px 20px 0;
 }
 
 .dashboard .card {
@@ -255,11 +256,17 @@ input::placeholder {
   background-color: #fff;
   border-radius: 10px;
   text-align: center;
+  min-height: 195px;
 }
 .summary-card span img{
     width: 11px;
     margin: 0 7px 0 4px;
 }
+
+/* .dashboard-right{
+  margin: 0;
+  padding: 0;
+} */
 
 .siz14 {
   font-size: 14px;
@@ -275,8 +282,7 @@ input::placeholder {
 .graph-img{
     height: 100%;
     border: 1px solid black;
-    border-top: none;
-    border-bottom: none;
+    
 }
 .products-card {
   background-color: #fff;
@@ -671,19 +677,29 @@ background-color: transparent;
   .sidebar{
     width: 200px;
   }
+ 
 
+ /* .dashboard .col-md-6:nth-child(1){
+  padding-right: 10px;
+ } */
   .graph-img{
+    overflow: hidden;
+  }
+
+  .graph-img img{
+    /* object-fit: contain; */
+    /* margin-left: auto; */
+    max-width: 480px;
     width: auto;
-    object-fit: contain;
+    margin-left: auto;
   }
 
 }
 
 /* 2. Standard Desktops & Large Tablets (max-width: 1199px) */
 @media (max-width: 1199px) {
-  /* Reduce sidebar padding and menu font size */
   .sidebar {
-    width: 200px;
+    width: 160px;
     padding: 26px 0 0 20px;
   }
 
@@ -707,6 +723,25 @@ background-color: transparent;
 
   .product-info {
     flex-basis: 120px; /* Give it a bit more space */
+  }
+
+   .graph-img{
+    overflow: hidden;
+    border: 1px solid #333333;
+  }
+
+  .graph-img img{
+   object-fit: contain;
+    max-width: 480px;
+    width: auto;
+    margin-right: auto;
+  }
+
+  #earning{
+    font-size: 16px;
+  }
+  .summary-card{
+    min-height: 215px;
   }
 }
 
@@ -789,14 +824,27 @@ background-color: transparent;
     max-width: 100%;
   }
 
-  .graph-img {
-    margin-bottom: 24px; /* Add space when stacked */
+ 
+    .graph-img{
+    overflow: hidden;
+    border: 1px solid #333333;
+    margin: 0;      
+    display: flex;
+    justify-content: center;
+  }
+
+  .summary-card{
+    min-height: 150px;
+  }
+
+  .dashboard .col-md-6:nth-child(1){
+    margin-bottom: 23px;
   }
 }
 
 /* 4. Small Tablets & Large Phones (max-width: 767px) - Mobile Layout */
 @media (max-width: 767px) {
-  /* --- Hide Sidebar, Full-width Content --- */
+
   .left-part {
     display: none;
   }
@@ -804,7 +852,6 @@ background-color: transparent;
   .right-part {
     flex: 0 0 100%;
     max-width: 100%;
-    /* Remove default padding if any */
     padding: 0;
   }
 
@@ -834,8 +881,7 @@ background-color: transparent;
   /* Top Data Part (Dashboard title & buttons) */
   .top-data-part {
     flex-direction: column;
-    align-items: stretch !important; /* Override d-flex */
-    gap: 16px;
+    align-items: stretch !important;
     padding: 16px;
   }
 
@@ -850,40 +896,40 @@ background-color: transparent;
     width: 100%;
   }
 
-  /* --- Adjust Dashboard Body --- */
+
   .dashboard {
     padding: 20px 16px;
   }
 
-  /* Summary cards are now 1-across (handled by .col-md-3 stacking) */
+  
 
-  /* --- Adjust Product List --- */
-  .products-card .header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 15px;
-  }
+  
 
-  .products-card .btn-group {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
+  /* Stack recent order items */
   .product-item {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
+    
+    flex-direction: row;
+    flex-wrap: nowrap; 
+    align-items: center; 
+    gap: 10px;
+    overflow-x: auto;
+  }
+
+  .product-info {
+   
+    width: 150px; 
   }
 
   .product-stats {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+    
+    flex-direction: row;
+    width: auto; 
+    gap: 20px; 
   }
 
   .stat-item {
-    text-align: center !important;
+    flex-shrink: 0;
+    text-align: left !important;
   }
 
   /* Stack pagination */
@@ -895,7 +941,7 @@ background-color: transparent;
 }
 
 /* 5. Small Phones (max-width: 575px) */
-@media (max-width: 575px) {
+@media (max-width: 575px) { 
   /* Adjust base typography for small screens */
   h1 {
     font-size: 48px;
@@ -935,34 +981,103 @@ background-color: transparent;
     text-align: left !important;
   }
 
-  /* Stack recent order items */
-  .recent-order-item {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 8px;
+  #data{
+    display: none !important;
   }
+
+  /* Stack recent order items */
+  .product-item {
+    
+    flex-direction: row;
+    flex-wrap: nowrap; 
+    align-items: center; 
+    gap: 10px;
+    overflow-x: auto;
+  }
+
+  .product-info {
+   
+    width: 150px; 
+  }
+
+  .product-stats {
+    
+    flex-direction: row;
+    width: auto; 
+    gap: 20px; 
+  }
+
+  .stat-item {
+    flex-shrink: 0;
+    text-align: left !important;
+  }
+
+ 
 }
 
 /* 6. Extra Small Phones (max-width: 320px) */
 @media (max-width: 320px) {
-  /* Wrap topbar icons if needed */
+
   .topbar ul {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
   }
 
-  /* Stack product import/export buttons */
-  .products-card .btn-group {
-    grid-template-columns: 1fr;
-    gap: 10px;
-  }
-
-  /* Adjust search icon positions */
   .form-img::before {
     left: 15px;
   }
   .form-img::after {
     right: 20px;
   }
+
+  .graph-img img{
+    object-fit: contain;
+    max-width: 300px;
+    
+  }
+  
+  .summary-card{
+    min-height: 210px;
+  }
+
+  /* prodduct part fixing */
+  .product-item {
+  flex-direction: row;
+  align-items: center; 
+  gap: 8px; 
+}
+
+.product-info {
+  
+  flex: 1;
+  min-width: 0; 
+}
+
+.product-name {
+  
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+}
+
+.product-stats {
+  
+  flex-direction: row;
+  width: auto; 
+  gap: 12px; 
+  flex-shrink: 0; 
+}
+
+.stat-item {
+  
+  text-align: left !important;
+}
+
+.stat-value {
+  font-size: 12px;
+}
+.stat-label {
+  font-size: 10px;
+}
 }
