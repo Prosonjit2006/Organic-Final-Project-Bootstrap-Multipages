@@ -390,7 +390,7 @@ input[type="email"] {
 @media screen and (max-width: 1199px) {
 }
 
-/* preview lg - 9px */
+
 
 /* lg - 991px */
 @media screen and (max-width: 991.98px) {
@@ -537,6 +537,33 @@ input[type="email"] {
 
 /* brakepoint- 530px */
 @media screen and (max-width: 530px) {
+  #flex{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-align: center;
+  }
+}
+
+/* brakepoint - 480px */
+@media screen and (max-width:480px) {
+  .mail-content {
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    position: relative;
+  }
+ 
+    #email-flex {
+      /* position: absolute;
+      bottom: 15px;
+      left: 13%; */
+    margin: 0 auto;
+  }
+  .email-btn {
+    right: 8px;
+  }
+ 
 }
 
 /* brakepoint - 390px */
@@ -554,6 +581,12 @@ input[type="email"] {
     margin-top: -6px;
     margin-right: 2px;
   }
+
+  #flex{
+    font-size: 14px;
+  }
+
+
 }
 
 /* xs - 320px */
@@ -594,6 +627,9 @@ input[type="email"] {
 
   h2 {
     font-size: 36px;
+  }
+  #flex{
+   margin-left: 40px;
   }
 
   .mail-content {
