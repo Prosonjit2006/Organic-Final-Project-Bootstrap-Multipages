@@ -587,6 +587,11 @@ input[type="email"]:focus {
     width: 25%;
   }
 
+  html,
+body {
+  overflow-x: hidden;
+}
+
   .mail-phone {
     flex-direction: column;
     gap: 0;
