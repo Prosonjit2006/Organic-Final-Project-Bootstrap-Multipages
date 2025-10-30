@@ -19,7 +19,8 @@
 .green {
   color: var(--green);
 }
-html, body{
+html,
+body {
   overflow-x: hidden;
 }
 
@@ -257,11 +258,9 @@ nav {
   display: block;
 }
 
-.user-menu hr{
+.user-menu hr {
   margin: 10px 0;
 }
-
-
 
 .menu-link {
   font-family: raleway;
@@ -275,10 +274,9 @@ nav {
 
 .menu-link:hover {
   /* background: #f0f0f0; */
-  background-color: #A1BE61;
+  background-color: #a1be61;
   color: white;
 }
-
 
 /* ========================================================================================== mail part */
 
@@ -301,7 +299,7 @@ input[type="email"] {
   height: 68px;
   margin-left: 45px;
 }
-input[type="email"]:focus{
+input[type="email"]:focus {
   background-color: rgb(239, 248, 249);
   border: 1px solid greenyellow;
 }
@@ -373,19 +371,6 @@ input[type="email"]:focus{
   transform: scale(1.35) translateY(-4px);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ------------ responsive part ----------- */
 
 /* xxl - 1399px */
@@ -395,8 +380,6 @@ input[type="email"]:focus{
 /* xl - 1199px */
 @media screen and (max-width: 1199px) {
 }
-
-
 
 /* lg - 991px */
 @media screen and (max-width: 991.98px) {
@@ -414,7 +397,7 @@ input[type="email"]:focus{
   }
 
   /* navbar part */
-   /* .navbar-toggler {
+  /* .navbar-toggler {
     display: block !important;
     border: none;
   }
@@ -501,15 +484,14 @@ input[type="email"]:focus{
   #siz11 {
     font-size: 16px;
   }
-  #siz11 figure{
-    margin:1px 3px 0 0;
-    
+  #siz11 figure {
+    margin: 1px 3px 0 0;
   }
-  #siz11 figure img{
+  #siz11 figure img {
     width: 16px;
     object-fit: contain;
   }
- 
+
   .mail-phone li {
     line-height: 0;
   }
@@ -543,7 +525,7 @@ input[type="email"]:focus{
 
 /* brakepoint- 530px */
 @media screen and (max-width: 530px) {
-  #flex{
+  #flex {
     display: flex;
     align-items: center;
     gap: 5px;
@@ -552,45 +534,42 @@ input[type="email"]:focus{
 }
 
 /* brakepoint - 480px */
-@media screen and (max-width:480px) {
+@media screen and (max-width: 480px) {
   .mail-content {
     display: flex;
     flex-direction: column;
     height: 250px;
     position: relative;
   }
- 
-  #email-flex {  
-   display: block;
-   position: absolute;
-   bottom: 10%;
+
+  #email-flex {
+    display: block;
+    position: absolute;
+    bottom: 10%;
   }
   .email-btn {
     right: 8px;
   }
- 
 }
 
 /* brakepoint - 390px */
 @media screen and (max-width: 390px) {
-  .topbar{
+  .topbar {
     margin: 0 -5px;
-    
   }
-  #siz11{
+  #siz11 {
     display: flex;
     flex-direction: row;
     /* font-size: 13px; */
   }
-  #siz11 i{
+  #siz11 i {
     margin-top: -6px;
     margin-right: 2px;
   }
 
-  #flex{
+  #flex {
     font-size: 14px;
   }
-
 }
 
 /* xs - 320px */
@@ -632,8 +611,8 @@ input[type="email"]:focus{
   h2 {
     font-size: 36px;
   }
-  #flex{
-   margin-left: 40px;
+  #flex {
+    margin-left: 40px;
   }
 
   .mail-content {
